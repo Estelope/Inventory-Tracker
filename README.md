@@ -6,7 +6,7 @@ This is a demo of an inventory tracker app for a coffee company. It demonstrates
 
 
 ## Component Tree
-![Tree](InventoryTracker\ReactFundamentalsTree.png)
+![Tree](InventoryTracker/ReactFundamentalsTree.png)
 
 ## Available Scripts
 
