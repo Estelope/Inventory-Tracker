@@ -1,0 +1,8 @@
+{
+  "short_name": "inventory_tracker",
+  "name": "inventory_tracker",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
