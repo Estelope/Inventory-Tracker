@@ -6,7 +6,7 @@ function InventoryList(props) {
   return (
     <>
       <hr />
-      {props.itemList.map((item) =>
+      {props.inventoryList.map((item) =>
         <Item
           onItemClick={props.onItemSelection}
           names={item.names}
