@@ -8,7 +8,7 @@ function InventoryList(props) {
       <hr />
       {props.inventoryList.map((item) =>
         <Item
-          onItemClick={props.onItemSelection}
+          onItemClicked={props.onItemSelection}
           names={item.names}
           origin={item.origin}
           price={item.price}

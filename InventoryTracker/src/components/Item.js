@@ -9,7 +9,7 @@ function Item(props) {
   return (
     <>
       <div style={itemStyles}
-           onClick={() => props.whenItemClicked(props.id)}>
+           onClick={() => props.onItemClicked(props.id)}>
         <h3>{props.names} - {props.origin}</h3>
         <p>amount in stock: {props.amount}</p>
         <hr />
@@ -25,7 +25,7 @@ Item.propTypes = {
   amount: PropTypes.number.isRequired,
   roast: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  whenItemClicked: PropTypes.func
+  onItemClicked: PropTypes.func
 }
 
 export default Item;
