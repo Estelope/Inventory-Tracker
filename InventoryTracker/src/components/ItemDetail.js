@@ -15,12 +15,12 @@ function ItemDetail(props){
   return (
     <React.Fragment>
       <h1>This Bean's Details</h1>
-      <h3>{item.origin} - {item.names} - {item.roast}</h3>
+      <h3>{item.origin} - {item.names} - {item.roast} - {item.price}</h3>
       <p><em>{item.amount}</em></p>
       <button onClick={handleIncrementingAmount}>Increase Amount</button>
       <button onClick={handleDecrementingAmount}>Decrease Amount</button>
       <br />
-      <button onClick={() => onClickingEdit(item.id)}>Edit </button>
+      <button onClick={() => onClickingEdit(item.id)}>Edit</button>
       <button onClick={() => onClickingDelete(item.id)}>Delete</button>
       <br />
     </React.Fragment>
@@ -30,7 +30,8 @@ function ItemDetail(props){
 ItemDetail.propTypes = {
   item: PropTypes.object,
   onClickingDelete: PropTypes.func,
-  onClickingEdit: PropTypes.func 
+  onClickingEdit: PropTypes.func,
+  onClickingUpdateAmount: PropTypes.func
 };
 
 export default ItemDetail;

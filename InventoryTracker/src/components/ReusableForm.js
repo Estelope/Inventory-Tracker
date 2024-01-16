@@ -26,6 +26,8 @@ function ReusableForm(props) {
         <textarea
           name="price"
           type="number"
+          min="1"
+          max="9999"
           placeholder="price per pound"
           required />
         <br />
